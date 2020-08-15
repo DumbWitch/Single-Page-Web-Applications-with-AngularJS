@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="lunchChecker">
+  <head>
+    <meta charset="utf-8">
+    <script src ="angular.min.js"> </script>
+    <script src ="app.js">    </script>
+    <title>Lunch-checker</title>
+  </head>
+  <body>
+      <div ng-controller="lunchCheckerController">
+         <input type="text" placeholder="list items for lunch and separate them using comma" ng-model="item"><br>
+         <br>
+         <div>
+           <button ng-click="CheckItem()">Check If Too Much</button>
+
+         </div>
+         <div ng-show="!empty">{{message}}</div>
+      </div>
+  </body>
+</html>
